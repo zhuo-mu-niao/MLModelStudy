@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>03012017-dji-phantom-flying-sky-260nw-555436900_jpg.rf.0a38a7d1edcad5a2ccd54f63166fbb8d.jpg</filename>
+	<path>03012017-dji-phantom-flying-sky-260nw-555436900_jpg.rf.0a38a7d1edcad5a2ccd54f63166fbb8d.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>108</xmin>
+			<xmax>479</xmax>
+			<ymin>146</ymin>
+			<ymax>384</ymax>
+		</bndbox>
+	</object>
+</annotation>

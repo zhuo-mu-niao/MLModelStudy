@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>minsk-belarus-may-17-2018-260nw-1099654601_jpg.rf.d5a45394495c9060356080f79bcd230d.jpg</filename>
+	<path>minsk-belarus-may-17-2018-260nw-1099654601_jpg.rf.d5a45394495c9060356080f79bcd230d.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<xmax>621</xmax>
+			<ymin>44</ymin>
+			<ymax>526</ymax>
+		</bndbox>
+	</object>
+</annotation>

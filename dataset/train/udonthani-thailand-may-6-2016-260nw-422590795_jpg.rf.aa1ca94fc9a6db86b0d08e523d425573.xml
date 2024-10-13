@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>udonthani-thailand-may-6-2016-260nw-422590795_jpg.rf.aa1ca94fc9a6db86b0d08e523d425573.jpg</filename>
+	<path>udonthani-thailand-may-6-2016-260nw-422590795_jpg.rf.aa1ca94fc9a6db86b0d08e523d425573.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>332</xmin>
+			<xmax>546</xmax>
+			<ymin>161</ymin>
+			<ymax>310</ymax>
+		</bndbox>
+	</object>
+</annotation>

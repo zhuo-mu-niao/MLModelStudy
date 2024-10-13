@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>kyiv-ukraine-april-29-2017-260nw-630398390_jpg.rf.ef5e198de06a8261dc329bca532523f4.jpg</filename>
+	<path>kyiv-ukraine-april-29-2017-260nw-630398390_jpg.rf.ef5e198de06a8261dc329bca532523f4.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>110</xmin>
+			<xmax>560</xmax>
+			<ymin>141</ymin>
+			<ymax>342</ymax>
+		</bndbox>
+	</object>
+</annotation>

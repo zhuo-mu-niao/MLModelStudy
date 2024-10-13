@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>nong-khai-thailand-jan-3-260nw-594185705_jpg.rf.e18931ad7f41714fa01ea48edf8ed9bc.jpg</filename>
+	<path>nong-khai-thailand-jan-3-260nw-594185705_jpg.rf.e18931ad7f41714fa01ea48edf8ed9bc.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>341</xmin>
+			<xmax>545</xmax>
+			<ymin>177</ymin>
+			<ymax>337</ymax>
+		</bndbox>
+	</object>
+</annotation>

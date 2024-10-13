@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>video17_1160_JPEG_jpg.rf.265fddf4853d9973e0ecc16695972820.jpg</filename>
+	<path>video17_1160_JPEG_jpg.rf.265fddf4853d9973e0ecc16695972820.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>391</xmin>
+			<xmax>405</xmax>
+			<ymin>297</ymin>
+			<ymax>318</ymax>
+		</bndbox>
+	</object>
+</annotation>

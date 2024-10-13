@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>sanktpetersburg-russia-march-12-2018-260nw-1044085012_jpg.rf.2218e91e690a834c67a020e7e78922f3.jpg</filename>
+	<path>sanktpetersburg-russia-march-12-2018-260nw-1044085012_jpg.rf.2218e91e690a834c67a020e7e78922f3.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>65</xmin>
+			<xmax>564</xmax>
+			<ymin>71</ymin>
+			<ymax>593</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>kampala-uganda-10082017-dji-phantom-260nw-759789205_jpg.rf.8f77244ed562baf5dd28ee345a462023.jpg</filename>
+	<path>kampala-uganda-10082017-dji-phantom-260nw-759789205_jpg.rf.8f77244ed562baf5dd28ee345a462023.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>199</xmin>
+			<xmax>498</xmax>
+			<ymin>33</ymin>
+			<ymax>381</ymax>
+		</bndbox>
+	</object>
+</annotation>

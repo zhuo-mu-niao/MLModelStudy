@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>dji-phantom-3-professional-drone-260nw-1010962075_jpg.rf.636e790f482d14874e523dc6ce7a325c.jpg</filename>
+	<path>dji-phantom-3-professional-drone-260nw-1010962075_jpg.rf.636e790f482d14874e523dc6ce7a325c.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<xmax>641</xmax>
+			<ymin>71</ymin>
+			<ymax>641</ymax>
+		</bndbox>
+	</object>
+</annotation>

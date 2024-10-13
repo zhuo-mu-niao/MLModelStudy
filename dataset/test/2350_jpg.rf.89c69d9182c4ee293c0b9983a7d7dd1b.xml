@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>2350_jpg.rf.89c69d9182c4ee293c0b9983a7d7dd1b.jpg</filename>
+	<path>2350_jpg.rf.89c69d9182c4ee293c0b9983a7d7dd1b.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>157</xmin>
+			<xmax>176</xmax>
+			<ymin>138</ymin>
+			<ymax>159</ymax>
+		</bndbox>
+	</object>
+</annotation>

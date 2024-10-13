@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>pilsen-czech-republic-june-2-260nw-431450044_jpg.rf.f3ae0064b8c6ab6aa18696f176aadb8a.jpg</filename>
+	<path>pilsen-czech-republic-june-2-260nw-431450044_jpg.rf.f3ae0064b8c6ab6aa18696f176aadb8a.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>4</xmin>
+			<xmax>641</xmax>
+			<ymin>47</ymin>
+			<ymax>410</ymax>
+		</bndbox>
+	</object>
+</annotation>

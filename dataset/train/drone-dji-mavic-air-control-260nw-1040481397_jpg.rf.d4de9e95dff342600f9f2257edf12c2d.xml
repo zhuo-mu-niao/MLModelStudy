@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>drone-dji-mavic-air-control-260nw-1040481397_jpg.rf.d4de9e95dff342600f9f2257edf12c2d.jpg</filename>
+	<path>drone-dji-mavic-air-control-260nw-1040481397_jpg.rf.d4de9e95dff342600f9f2257edf12c2d.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>9</xmin>
+			<xmax>406</xmax>
+			<ymin>58</ymin>
+			<ymax>563</ymax>
+		</bndbox>
+	</object>
+</annotation>

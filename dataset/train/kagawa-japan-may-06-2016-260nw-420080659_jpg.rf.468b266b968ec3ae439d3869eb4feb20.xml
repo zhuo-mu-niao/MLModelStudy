@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>kagawa-japan-may-06-2016-260nw-420080659_jpg.rf.468b266b968ec3ae439d3869eb4feb20.jpg</filename>
+	<path>kagawa-japan-may-06-2016-260nw-420080659_jpg.rf.468b266b968ec3ae439d3869eb4feb20.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>145</xmin>
+			<xmax>550</xmax>
+			<ymin>11</ymin>
+			<ymax>497</ymax>
+		</bndbox>
+	</object>
+</annotation>

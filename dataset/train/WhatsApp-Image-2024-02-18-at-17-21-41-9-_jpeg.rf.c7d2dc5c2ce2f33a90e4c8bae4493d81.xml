@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>WhatsApp-Image-2024-02-18-at-17-21-41-9-_jpeg.rf.c7d2dc5c2ce2f33a90e4c8bae4493d81.jpg</filename>
+	<path>WhatsApp-Image-2024-02-18-at-17-21-41-9-_jpeg.rf.c7d2dc5c2ce2f33a90e4c8bae4493d81.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>202</xmin>
+			<xmax>324</xmax>
+			<ymin>109</ymin>
+			<ymax>233</ymax>
+		</bndbox>
+	</object>
+</annotation>

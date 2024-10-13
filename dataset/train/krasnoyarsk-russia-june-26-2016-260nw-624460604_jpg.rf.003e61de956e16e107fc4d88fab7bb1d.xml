@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>krasnoyarsk-russia-june-26-2016-260nw-624460604_jpg.rf.003e61de956e16e107fc4d88fab7bb1d.jpg</filename>
+	<path>krasnoyarsk-russia-june-26-2016-260nw-624460604_jpg.rf.003e61de956e16e107fc4d88fab7bb1d.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<xmax>641</xmax>
+			<ymin>165</ymin>
+			<ymax>641</ymax>
+		</bndbox>
+	</object>
+</annotation>

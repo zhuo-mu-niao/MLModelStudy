@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>chanburi-thailand-11-april-2017-260nw-633128864_jpg.rf.ccdf888e221ce64838ec8f23f7026ee7.jpg</filename>
+	<path>chanburi-thailand-11-april-2017-260nw-633128864_jpg.rf.ccdf888e221ce64838ec8f23f7026ee7.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>169</xmin>
+			<xmax>573</xmax>
+			<ymin>165</ymin>
+			<ymax>440</ymax>
+		</bndbox>
+	</object>
+</annotation>

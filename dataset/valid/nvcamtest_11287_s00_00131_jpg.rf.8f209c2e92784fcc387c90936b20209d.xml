@@ -1,0 +1,14 @@
+<annotation>
+	<folder></folder>
+	<filename>nvcamtest_11287_s00_00131_jpg.rf.8f209c2e92784fcc387c90936b20209d.jpg</filename>
+	<path>nvcamtest_11287_s00_00131_jpg.rf.8f209c2e92784fcc387c90936b20209d.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+</annotation>

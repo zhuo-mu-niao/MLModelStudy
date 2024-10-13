@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>toronto-canada-february-17-2017-260nw-582238741_jpg.rf.05f7708f4e34b28badcb97e2dcd29174.jpg</filename>
+	<path>toronto-canada-february-17-2017-260nw-582238741_jpg.rf.05f7708f4e34b28badcb97e2dcd29174.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<xmax>641</xmax>
+			<ymin>1</ymin>
+			<ymax>641</ymax>
+		</bndbox>
+	</object>
+</annotation>

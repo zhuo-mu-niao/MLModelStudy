@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>tello_352_jpeg.rf.aa71a4a35bb91b5d68b73d838d0df187.jpg</filename>
+	<path>tello_352_jpeg.rf.aa71a4a35bb91b5d68b73d838d0df187.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>320</xmin>
+			<xmax>641</xmax>
+			<ymin>36</ymin>
+			<ymax>536</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>yoto00001_jpg.rf.e13fd90e2c0df188bff0dfb2f8968525.jpg</filename>
+	<path>yoto00001_jpg.rf.e13fd90e2c0df188bff0dfb2f8968525.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>83</xmin>
+			<xmax>440</xmax>
+			<ymin>15</ymin>
+			<ymax>441</ymax>
+		</bndbox>
+	</object>
+</annotation>

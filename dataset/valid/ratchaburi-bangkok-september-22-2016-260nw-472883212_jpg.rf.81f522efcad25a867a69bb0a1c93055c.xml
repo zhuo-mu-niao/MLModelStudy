@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>ratchaburi-bangkok-september-22-2016-260nw-472883212_jpg.rf.81f522efcad25a867a69bb0a1c93055c.jpg</filename>
+	<path>ratchaburi-bangkok-september-22-2016-260nw-472883212_jpg.rf.81f522efcad25a867a69bb0a1c93055c.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<xmax>641</xmax>
+			<ymin>51</ymin>
+			<ymax>504</ymax>
+		</bndbox>
+	</object>
+</annotation>

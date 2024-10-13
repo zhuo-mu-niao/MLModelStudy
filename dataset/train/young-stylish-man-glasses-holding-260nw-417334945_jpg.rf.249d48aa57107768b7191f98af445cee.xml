@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>young-stylish-man-glasses-holding-260nw-417334945_jpg.rf.249d48aa57107768b7191f98af445cee.jpg</filename>
+	<path>young-stylish-man-glasses-holding-260nw-417334945_jpg.rf.249d48aa57107768b7191f98af445cee.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>64</xmin>
+			<xmax>330</xmax>
+			<ymin>287</ymin>
+			<ymax>526</ymax>
+		</bndbox>
+	</object>
+</annotation>

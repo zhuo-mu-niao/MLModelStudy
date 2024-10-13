@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>nevsehir-turkey-april-22-2017-260nw-629792609_jpg.rf.44bb19108720a4fde6864362fc052469.jpg</filename>
+	<path>nevsehir-turkey-april-22-2017-260nw-629792609_jpg.rf.44bb19108720a4fde6864362fc052469.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>137</xmin>
+			<xmax>504</xmax>
+			<ymin>124</ymin>
+			<ymax>549</ymax>
+		</bndbox>
+	</object>
+</annotation>

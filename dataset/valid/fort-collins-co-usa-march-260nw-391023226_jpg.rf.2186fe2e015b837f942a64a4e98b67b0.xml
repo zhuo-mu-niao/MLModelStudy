@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>fort-collins-co-usa-march-260nw-391023226_jpg.rf.2186fe2e015b837f942a64a4e98b67b0.jpg</filename>
+	<path>fort-collins-co-usa-march-260nw-391023226_jpg.rf.2186fe2e015b837f942a64a4e98b67b0.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<xmax>435</xmax>
+			<ymin>33</ymin>
+			<ymax>297</ymax>
+		</bndbox>
+	</object>
+</annotation>

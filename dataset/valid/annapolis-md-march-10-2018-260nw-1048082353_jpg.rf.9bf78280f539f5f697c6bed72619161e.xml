@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>annapolis-md-march-10-2018-260nw-1048082353_jpg.rf.9bf78280f539f5f697c6bed72619161e.jpg</filename>
+	<path>annapolis-md-march-10-2018-260nw-1048082353_jpg.rf.9bf78280f539f5f697c6bed72619161e.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>106</xmin>
+			<xmax>314</xmax>
+			<ymin>453</ymin>
+			<ymax>549</ymax>
+		</bndbox>
+	</object>
+</annotation>

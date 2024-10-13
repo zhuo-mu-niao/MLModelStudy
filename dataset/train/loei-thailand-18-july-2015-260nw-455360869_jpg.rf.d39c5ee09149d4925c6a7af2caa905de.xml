@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>loei-thailand-18-july-2015-260nw-455360869_jpg.rf.d39c5ee09149d4925c6a7af2caa905de.jpg</filename>
+	<path>loei-thailand-18-july-2015-260nw-455360869_jpg.rf.d39c5ee09149d4925c6a7af2caa905de.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>160</xmin>
+			<xmax>466</xmax>
+			<ymin>67</ymin>
+			<ymax>408</ymax>
+		</bndbox>
+	</object>
+</annotation>

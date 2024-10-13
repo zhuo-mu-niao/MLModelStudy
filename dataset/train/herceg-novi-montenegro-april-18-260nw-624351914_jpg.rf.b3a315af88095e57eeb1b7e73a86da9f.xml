@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>herceg-novi-montenegro-april-18-260nw-624351914_jpg.rf.b3a315af88095e57eeb1b7e73a86da9f.jpg</filename>
+	<path>herceg-novi-montenegro-april-18-260nw-624351914_jpg.rf.b3a315af88095e57eeb1b7e73a86da9f.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>78</xmin>
+			<xmax>566</xmax>
+			<ymin>43</ymin>
+			<ymax>539</ymax>
+		</bndbox>
+	</object>
+</annotation>

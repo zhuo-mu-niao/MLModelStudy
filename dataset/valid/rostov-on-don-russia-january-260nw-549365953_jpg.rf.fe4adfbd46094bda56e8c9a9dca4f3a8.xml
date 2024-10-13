@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>rostov-on-don-russia-january-260nw-549365953_jpg.rf.fe4adfbd46094bda56e8c9a9dca4f3a8.jpg</filename>
+	<path>rostov-on-don-russia-january-260nw-549365953_jpg.rf.fe4adfbd46094bda56e8c9a9dca4f3a8.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>40</xmin>
+			<xmax>509</xmax>
+			<ymin>91</ymin>
+			<ymax>486</ymax>
+		</bndbox>
+	</object>
+</annotation>

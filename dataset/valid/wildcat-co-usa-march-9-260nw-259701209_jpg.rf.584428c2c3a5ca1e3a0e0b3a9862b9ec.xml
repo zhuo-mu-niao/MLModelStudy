@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>wildcat-co-usa-march-9-260nw-259701209_jpg.rf.584428c2c3a5ca1e3a0e0b3a9862b9ec.jpg</filename>
+	<path>wildcat-co-usa-march-9-260nw-259701209_jpg.rf.584428c2c3a5ca1e3a0e0b3a9862b9ec.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<xmax>641</xmax>
+			<ymin>1</ymin>
+			<ymax>534</ymax>
+		</bndbox>
+	</object>
+</annotation>

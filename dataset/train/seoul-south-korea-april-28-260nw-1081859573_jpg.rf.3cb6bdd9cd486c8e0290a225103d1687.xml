@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>seoul-south-korea-april-28-260nw-1081859573_jpg.rf.3cb6bdd9cd486c8e0290a225103d1687.jpg</filename>
+	<path>seoul-south-korea-april-28-260nw-1081859573_jpg.rf.3cb6bdd9cd486c8e0290a225103d1687.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>101</xmin>
+			<xmax>529</xmax>
+			<ymin>164</ymin>
+			<ymax>376</ymax>
+		</bndbox>
+	</object>
+</annotation>

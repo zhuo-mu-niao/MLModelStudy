@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>nvcamtest_11722_s00_00043_jpg.rf.1488d737c89b85915d0cc6bdbf1706c1.jpg</filename>
+	<path>nvcamtest_11722_s00_00043_jpg.rf.1488d737c89b85915d0cc6bdbf1706c1.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>260</xmin>
+			<xmax>451</xmax>
+			<ymin>249</ymin>
+			<ymax>591</ymax>
+		</bndbox>
+	</object>
+</annotation>

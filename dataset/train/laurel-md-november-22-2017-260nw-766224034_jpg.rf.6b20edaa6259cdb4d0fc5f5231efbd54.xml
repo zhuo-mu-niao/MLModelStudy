@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>laurel-md-november-22-2017-260nw-766224034_jpg.rf.6b20edaa6259cdb4d0fc5f5231efbd54.jpg</filename>
+	<path>laurel-md-november-22-2017-260nw-766224034_jpg.rf.6b20edaa6259cdb4d0fc5f5231efbd54.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<xmax>432</xmax>
+			<ymin>74</ymin>
+			<ymax>445</ymax>
+		</bndbox>
+	</object>
+</annotation>

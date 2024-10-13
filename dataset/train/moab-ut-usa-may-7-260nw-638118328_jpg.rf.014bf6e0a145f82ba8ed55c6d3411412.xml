@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>moab-ut-usa-may-7-260nw-638118328_jpg.rf.014bf6e0a145f82ba8ed55c6d3411412.jpg</filename>
+	<path>moab-ut-usa-may-7-260nw-638118328_jpg.rf.014bf6e0a145f82ba8ed55c6d3411412.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>42</xmin>
+			<xmax>326</xmax>
+			<ymin>294</ymin>
+			<ymax>550</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>vilnius-lithuania-september-14-phantom-260nw-1057201058_jpg.rf.9c1b05da32b7316e4c8907c8307aeffa.jpg</filename>
+	<path>vilnius-lithuania-september-14-phantom-260nw-1057201058_jpg.rf.9c1b05da32b7316e4c8907c8307aeffa.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>89</xmin>
+			<xmax>568</xmax>
+			<ymin>112</ymin>
+			<ymax>506</ymax>
+		</bndbox>
+	</object>
+</annotation>

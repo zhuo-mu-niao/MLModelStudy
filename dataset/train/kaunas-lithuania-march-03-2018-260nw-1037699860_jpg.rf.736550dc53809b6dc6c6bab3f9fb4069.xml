@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>kaunas-lithuania-march-03-2018-260nw-1037699860_jpg.rf.736550dc53809b6dc6c6bab3f9fb4069.jpg</filename>
+	<path>kaunas-lithuania-march-03-2018-260nw-1037699860_jpg.rf.736550dc53809b6dc6c6bab3f9fb4069.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>drone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<xmax>641</xmax>
+			<ymin>15</ymin>
+			<ymax>505</ymax>
+		</bndbox>
+	</object>
+</annotation>

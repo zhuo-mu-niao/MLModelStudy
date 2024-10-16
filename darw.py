@@ -1,5 +1,4 @@
 import os
-import torch
 import torchvision
 from torch.utils.data import DataLoader, Dataset
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
@@ -10,8 +9,10 @@ from torchvision.models.detection.faster_rcnn import fasterrcnn_mobilenet_v3_lar
 from torchvision.models.detection.faster_rcnn import FasterRCNN_ResNet50_FPN_Weights
 from torchvision.models import VGG16_BN_Weights, MobileNet_V3_Large_Weights
 from PIL import Image
+import torch
 import matplotlib.pyplot as plt
 from torchvision.utils import draw_bounding_boxes
+from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 
@@ -80,17 +81,23 @@ def get_model(num_classes, backbone_name='resnet50', pretrained=True):
         raise ValueError("Unsupported backbone")
     return model
 
-def deploy(dataset,output_dir = './output_images'):
-    loader = DataLoader(dataset, batch_size=1, shuffle=False, collate_fn=collate_fn)
-    model = get_model(2, pretrained=False)
-    model.load_state_dict(torch.load('./test/model_epoch_7.pth'))
+
+def deploy(dataset, model, model_path, output_dir='./output_images'):
+    # Load model state dict
+    model.load_state_dict(torch.load(model_path))
     model.eval()
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     model.to(device)
+    batch_size = 1
+    confidence_threshold = 0.5
+    # Create DataLoader
+    dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, collate_fn=collate_fn)
+
+    # Create output directory
     os.makedirs(output_dir, exist_ok=True)
 
     with torch.no_grad():
-        for idx, images in enumerate(tqdm(loader, desc='Testing')):
+        for idx, images in enumerate(tqdm(dataloader, desc='Testing')):
             # Move images to the device (GPU or CPU)
             images = list(img.to(device) for img in images)
 
@@ -103,8 +110,8 @@ def deploy(dataset,output_dir = './output_images'):
                 pred_boxes = outputs[i]['boxes'].cpu()
                 pred_scores = outputs[i]['scores'].cpu()
 
-                # Filter predictions based on a confidence threshold (e.g., 0.5)
-                keep = pred_scores >= 0.5
+                # Filter predictions based on a confidence threshold
+                keep = pred_scores >= confidence_threshold
                 pred_boxes = pred_boxes[keep]
 
                 # Draw predicted bounding boxes (in red)
@@ -125,6 +132,9 @@ def deploy(dataset,output_dir = './output_images'):
                 plt.close()  # Close the figure to free memory
                 print(f"Saved: {output_image_path}")
 
+
 if __name__ == '__main__':
-    dataset = DroneDataset('./dataset/test')
-    deploy(dataset)
+    test_dataset = DroneDataset('./dataset/test')
+    model = get_model(2, backbone_name='resnet50',pretrained=False)
+    model_path='./model_epoch_7.pth'
+    deploy(test_dataset, model, model_path)

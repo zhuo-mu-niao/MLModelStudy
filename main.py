@@ -150,7 +150,7 @@ def calculate_metrics(all_preds, all_targets, iou_threshold=0.5):
     return f1_score, recall, precision
 
 # Training and validation function
-def train_and_valid(model, train_loader, valid_loader, device, optimizer, lr_scheduler, num_epochs=10, writer=None):
+def train_and_valid(model, train_loader, valid_loader, device, optimizer, lr_scheduler, num_epochs, writer=None):
     global_step = 0
     for epoch in range(num_epochs):
         model.train()
@@ -251,7 +251,6 @@ if __name__ == '__main__':
     train_loader = DataLoader(train_dataset, batch_size=4, shuffle=True, collate_fn=collate_fn)
     valid_loader = DataLoader(valid_dataset, batch_size=4, shuffle=False, collate_fn=collate_fn)
     test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, collate_fn=collate_fn)
-
     num_classes = 2
     model = get_model(num_classes)
 
@@ -263,7 +262,7 @@ if __name__ == '__main__':
 
     writer = SummaryWriter()
 
-    num_epochs = 10
+    num_epochs = 20
 
     # Training and validation
     train_and_valid(model, train_loader, valid_loader, device, optimizer, lr_scheduler, num_epochs=num_epochs, writer=writer)

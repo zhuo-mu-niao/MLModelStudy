@@ -2,7 +2,6 @@ import os
 import torch
 import torchvision
 from torch.utils.data import DataLoader, Dataset
-from torchvision import transforms
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 from torchvision.models import vgg16_bn
 from torchvision.models.detection import FasterRCNN
@@ -10,13 +9,10 @@ from torchvision.models.detection.anchor_utils import AnchorGenerator
 from torchvision.models.detection.faster_rcnn import fasterrcnn_mobilenet_v3_large_320_fpn
 from torchvision.models.detection.faster_rcnn import FasterRCNN_ResNet50_FPN_Weights
 from torchvision.models import VGG16_BN_Weights, MobileNet_V3_Large_Weights
-import xml.etree.ElementTree as ET
 from PIL import Image
-from torch.utils.tensorboard import SummaryWriter
 import matplotlib.pyplot as plt
 from torchvision.utils import draw_bounding_boxes
 from tqdm import tqdm
-import numpy as np
 
 
 class DroneDataset(Dataset):
@@ -84,20 +80,17 @@ def get_model(num_classes, backbone_name='resnet50', pretrained=True):
         raise ValueError("Unsupported backbone")
     return model
 
-if __name__ == '__main__':
-    test_dataset = DroneDataset('./test')
-    test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, collate_fn=collate_fn)
+def deploy(dataset,output_dir = './output_images'):
+    loader = DataLoader(dataset, batch_size=1, shuffle=False, collate_fn=collate_fn)
     model = get_model(2, pretrained=False)
     model.load_state_dict(torch.load('./test/model_epoch_7.pth'))
     model.eval()
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     model.to(device)
-
-    output_dir = './output_images'
     os.makedirs(output_dir, exist_ok=True)
 
     with torch.no_grad():
-        for idx, images in enumerate(tqdm(test_loader, desc='Testing')):
+        for idx, images in enumerate(tqdm(loader, desc='Testing')):
             # Move images to the device (GPU or CPU)
             images = list(img.to(device) for img in images)
 
@@ -131,3 +124,7 @@ if __name__ == '__main__':
                 plt.savefig(output_image_path)
                 plt.close()  # Close the figure to free memory
                 print(f"Saved: {output_image_path}")
+
+if __name__ == '__main__':
+    dataset = DroneDataset('./dataset/test')
+    deploy(dataset)

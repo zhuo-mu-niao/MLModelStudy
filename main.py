@@ -2,7 +2,6 @@ import os
 import torch
 import torchvision
 from torch.utils.data import DataLoader, Dataset
-from torchvision import transforms
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 from torchvision.models import vgg16_bn
 from torchvision.models.detection import FasterRCNN
@@ -16,14 +15,13 @@ from torch.utils.tensorboard import SummaryWriter
 import matplotlib.pyplot as plt
 from torchvision.utils import draw_bounding_boxes
 from tqdm import tqdm
-import numpy as np
 
 
 class DroneDataset(Dataset):
     def __init__(self, root, transforms=None):
         self.root = root
         if transforms is None:
-            self.transforms = transforms = torchvision.transforms.Compose([
+            self.transforms = torchvision.transforms.Compose([
                 torchvision.transforms.ToTensor()
             ])
         else:
@@ -151,36 +149,9 @@ def calculate_metrics(all_preds, all_targets, iou_threshold=0.5):
 
     return f1_score, recall, precision
 
-if __name__ == '__main__':
-
-    train_dataset = DroneDataset('./dataset/train')
-    valid_dataset = DroneDataset('./dataset/valid')
-    test_dataset = DroneDataset('./dataset/test')
-
-
-    train_loader = DataLoader(train_dataset, batch_size=4, shuffle=True, collate_fn=collate_fn)
-    valid_loader = DataLoader(valid_dataset, batch_size=4, shuffle=False, collate_fn=collate_fn)
-    test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, collate_fn=collate_fn)
-
-
-    num_classes = 2
-    model = get_model(num_classes)
-
-
-    optimizer = torch.optim.SGD(model.parameters(), lr=0.005, momentum=0.9, weight_decay=0.0005)
-    lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.1)
-
-
-    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-    model.to(device)
-
-
-    writer = SummaryWriter()
-
-
-    num_epochs = 10
+# Training and validation function
+def train_and_valid(model, train_loader, valid_loader, device, optimizer, lr_scheduler, num_epochs=10, writer=None):
     global_step = 0
-
     for epoch in range(num_epochs):
         model.train()
         epoch_loss = 0
@@ -197,14 +168,11 @@ if __name__ == '__main__':
             losses.backward()
             optimizer.step()
 
-
-            if global_step % 100 == 0:
+            if writer and global_step % 100 == 0:
                 writer.add_scalar('Loss/train', loss_value, global_step)
             global_step += 1
 
-
         lr_scheduler.step()
-
 
         model.eval()
         with torch.no_grad():
@@ -220,19 +188,20 @@ if __name__ == '__main__':
                     all_preds.append(outputs[i])
                     all_targets.append(targets[i])
 
-
             f1_score, recall, precision = calculate_metrics(all_preds, all_targets)
-            writer.add_scalar('F1/valid', f1_score, epoch)
-            writer.add_scalar('Recall/valid', recall, epoch)
-            writer.add_scalar('Precision/valid', precision, epoch)
+            if writer:
+                writer.add_scalar('F1/valid', f1_score, epoch)
+                writer.add_scalar('Recall/valid', recall, epoch)
+                writer.add_scalar('Precision/valid', precision, epoch)
             print(f'Epoch {epoch+1}: F1 Score={f1_score:.4f}, Recall={recall:.4f}, Precision={precision:.4f}')
-
 
         torch.save(model.state_dict(), f'model_epoch_{epoch+1}.pth')
 
-    model.load_state_dict(torch.load('model_epoch_7.pth'))
+# Testing function
+def test(model, test_loader, device, model_path=None, writer=None):
+    if model_path is not None:
+        model.load_state_dict(torch.load(model_path))
     model.eval()
-
     with torch.no_grad():
         all_preds = []
         all_targets = []
@@ -246,17 +215,14 @@ if __name__ == '__main__':
                 all_preds.append(outputs[i])
                 all_targets.append(targets[i])
 
-
             for i in range(len(images)):
                 img = images[i].cpu()
                 pred_boxes = outputs[i]['boxes'].cpu()
                 pred_scores = outputs[i]['scores'].cpu()
                 gt_boxes = targets[i]['boxes'].cpu()
 
-
                 keep = pred_scores >= 0.5
                 pred_boxes = pred_boxes[keep]
-
 
                 img_with_boxes = draw_bounding_boxes(
                     (img * 255).type(torch.uint8),
@@ -276,5 +242,33 @@ if __name__ == '__main__':
         print(f'Test Recall: {recall:.4f}')
         print(f'Test Precision: {precision:.4f}')
 
+if __name__ == '__main__':
+
+    train_dataset = DroneDataset('./dataset/train')
+    valid_dataset = DroneDataset('./dataset/valid')
+    test_dataset = DroneDataset('./dataset/test')
+
+    train_loader = DataLoader(train_dataset, batch_size=4, shuffle=True, collate_fn=collate_fn)
+    valid_loader = DataLoader(valid_dataset, batch_size=4, shuffle=False, collate_fn=collate_fn)
+    test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, collate_fn=collate_fn)
+
+    num_classes = 2
+    model = get_model(num_classes)
+
+    optimizer = torch.optim.SGD(model.parameters(), lr=0.005, momentum=0.9, weight_decay=0.0005)
+    lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.1)
+
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    model.to(device)
+
+    writer = SummaryWriter()
+
+    num_epochs = 10
+
+    # Training and validation
+    train_and_valid(model, train_loader, valid_loader, device, optimizer, lr_scheduler, num_epochs=num_epochs, writer=writer)
+
+    # Testing
+    test(model, test_loader, device, model_path='model_epoch_7.pth', writer=writer)
 
     writer.close()
